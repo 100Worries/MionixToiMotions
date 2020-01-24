@@ -1,2 +1,2 @@
 # MionixToiMotions
- Integration of the Mionix Naos QG mouse with iMotions. This program looks to create a proper set of data based on availabe metrics from the Mionix beta API. This data can then be viewed in real-time as well as being available for PPG + GSR analysis in iMotions. Using a mouse with embedded biosensors allows labs utilizing iMotions to collect unobstrusive metrics from participants during in-lab studies.
+Integration of the Mionix Naos QG mouse with iMotions. Sends data based on availabe metrics from the Mionix beta API - Making it available for standard PPG + GSR analysis in iMotions. 
