@@ -1,15 +1,73 @@
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 body {
-    padding-top: 50px;
+    padding-top: 5%;
     padding-bottom: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* chart*/
+#chartContainer {
+    padding-bottom: 600px;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.canvasjs-chart-canvas {
+    align-content: center;
+    position: relative;
+}
+
+/* Float four columns side by side */
+.data-column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+}
+
+.data-row {
+    margin: 0 -5px;
+}
+
+    /* Clear floats after the columns */
+    .data-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .data-column {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Style the cards */
+.data-card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding: 16px;
+    text-align: center;
+    background-color: whitesmoke;
+    color: #444;
+}
+
+.fa {
+    font-size: 50px;
 }
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 /* Carousel */
