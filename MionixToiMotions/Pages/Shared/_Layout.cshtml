@@ -46,95 +46,18 @@
     <div class="container body-content">
         @RenderBody()
 
-        <div id="chartContainer"></div>
-
-        <div class="container">
-            <h2>Heart Rate</h2>
-            <hr />
-
-            <br>
-            <div class="data-row">
-                <div class="data-column">
-                    <div class="data-card">
-                        <p><i class="fa fa-user"></i></p>
-                        <h3>-</h3>
-                        <p>Signal Quality</p>
-                    </div>
-                </div>
-
-                <div class="data-column">
-                    <div class="data-card">
-                        <p><i class="fa fa-check"></i></p>
-                        <h3>-</h3>
-                        <p>Heart Rate</p>
-                    </div>
-                </div>
-
-                <div class="data-column">
-                    <div class="data-card">
-                        <p><i class="fa fa-check"></i></p>
-                        <h3>-</h3>
-                        <p>Average Heart Rate</p>
-                    </div>
-                </div>
-
-                <div class="data-column">
-                    <div class="data-card">
-                        <p><i class="fa fa-check"></i></p>
-                        <h3>-</h3>
-                        <p>Max Heart Rate</p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <h2>Raw Data</h2>
-            <hr />
-            <br>
-            <div class="data-row">
-                <div class="data-column">
-                    <div class="data-card">
-                        <p><i class="fa fa-user"></i></p>
-                        <h3>-</h3>
-                        <p>Raw Heart Rate</p>
-                    </div>
-                </div>
-
-                <div class="data-column">
-                    <div class="data-card">
-                        <p><i class="fa fa-check"></i></p>
-                        <h3>-</h3>
-                        <p>Galvanic Skin Response</p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <h2>Mionix Outputs</h2>
-            <hr />
-            <br>
-            <div class="panel panel-success">
-                <div class="panel-heading"><span class="badge">Live</span> Mouse Metrics Demo </div>
-                <div class="panel-body">
-                    <pre id="bioMetrics"></pre>
-                    <pre id="bioRaw"></pre>
-                    <pre id="mouseMetrics"></pre>
-                </div>
-            </div>
-
-            <br />
             <footer>
                 <p>&copy; 2020 - MionixToiMotions</p>
             </footer>
-        </div>
     </div>
     <environment include="Development">
 
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
-
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-        <script src="~/js/mionix.js" asp-append-version="true"></script>
     </environment>
+
     <environment exclude="Development">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
@@ -148,10 +71,9 @@
                 crossorigin="anonymous"
                 integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
         </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
 
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-        <script src="~/js/mionix.js" asp-append-version="true"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
     @RenderSection("Scripts", required: false)
